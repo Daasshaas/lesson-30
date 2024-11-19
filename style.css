@@ -1,0 +1,33 @@
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+}
+
+.square:hover{
+    animation: changeBgColor 3000ms linear normal forwards;
+}
+
+@keyframes changeBgColor {
+    0% {
+        bottom: 200px;
+        background-color: blue;
+    }
+    25% {
+        right: 200px;
+        background-color: green;
+    }
+    50%{
+        top: 200px;
+        background-color: yellow;
+    }
+    75%{
+        left: 200px;
+        background-color: red;
+    }
+    100%{
+        bottom: 200px;
+        background-color: blue;
+    }
+}
